@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "reset": "node reset.js"
+  },
+  "keywords": [],
+  "author": "raimonfuns",
+  "license": "ISC",
+  "dependencies": {
+    "@commonify/lowdb": "^3.0.0",
+    "@koa/cors": "^3.3.0",
+    "http-status": "^1.5.2",
+    "joi": "^17.6.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-convert": "^2.0.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^8.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "nodemon": "^2.0.19",
+    "rum-sdk-nodejs": "1.1.1",
+    "socket.io": "^4.5.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.json"
+    ]
+  }
+}
