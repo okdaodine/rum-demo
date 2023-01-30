@@ -154,7 +154,7 @@ export default observer(() => {
 
   const onPostDelete = (postId: string) => {
     confirmDialogStore.show({
-      content: `确实要删除这条 post 吗 (${postId})`,
+      content: `确实要删除吗?`,
       ok: async () => {
         confirmDialogStore.setLoading(true);
         await TrxApi.createActivity({
