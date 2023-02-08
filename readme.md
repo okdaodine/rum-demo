@@ -1,45 +1,43 @@
-如果你想了解如何基于 [Rum](https://github.com/rumsystem/quorum) 开发一个应用，这是一个非常好的例子。
+If you want to learn how to develop an application based on [Rum](https://github.com/rumsystem/quorum), this is a very good example.
 
-所有的功能实现参考 Quorum 官方推荐的 [ActivityPub](https://docs.rumsystem.net/docs/data-format-and-examples/) 格式。
+All the functional implementations refer to the [ActivityPub](https://docs.rumsystem.net/docs/data-format-and-examples/) format recommended by Quorum official.
 
-这个例子的功能是很简单的，但它的应用场景非常典型，所以具有参考的意义。
+This example is simple, but its application scenario is very common, so it's worth looking at.
 
-这里有一个 live 版本可以让您体验一下：https://rum-demo.prsdev.club
+Here is a live version you can try now: https://rum-demo.prsdev.club
 
-如果您想要在本地运行，可以参考如下步骤：
+If you want to run it on your own computer, follow these steps:
 
-## 获取代码
+## Get the code
 
 ```
 git clone https://github.com/okdaodine/rum-demo.git
 ```
 
-## 配置 Rum Group
+## Configure Rum Group
 
-1. 打开 [Quorum open node](https://node.rumsystem.net/)
-2. 使用 Github 登录
-3. 创建一个 group
-4. 打开 group
-5. 复制 seed
-6. 将 seed 填写到 `server/config.js` 里面的 `seedUrl`。
+1. Open [Quorum open node](https://node.rumsystem.net/)
+2. Log in with Github
+3. Create a group
+4. Open the group
+5. Copy the seed
+6. Fill in the `seedUrl` in `server/config.js`.
 
-这样就完成了 Rum Group 的配置啦。
+Done! let's start using this Rum Group.
 
-好，接下来让我们开始使用这个 Rum Group 吧。
+## Start the frontend service
+(This example is developed in JavaScript, so please install nodejs first)
 
-## 启动前端服务
-（这个例子使用 js 开发，所以请先安装 nodejs 哦）
-
-在根目录下，运行：
+In the root directory, run:
 
 ```
 yarn install
 yarn dev
 ```
 
-## 启动后端服务
+## Start the backend service
 
-另外起一个终端界面，执行：
+Open another terminal window and execute:
 
 ```
 cd server
@@ -47,28 +45,24 @@ yarn install
 yarn dev
 ```
 
-## 访问服务
+## Access the service
 
 http://localhost:3000
 
-## 总结和进阶
+## Summary and Advancement
 
-通过这个例子，您可以知道：
+Through this example, you can know:
 
-1. 如何实现 post
-2. 如何实现 comment
-3. 如何实现 like
-4. 如何实现 profile
+1. How to implement post?
+2. How to implement comment?
+3. How to implement like?
+4. How to implement profile?
 
-如果您想实现更多功能，比如说：
+If you want to implement more features, such as:
 
-1. post 如何包含图片
-2. profile 如何修改头像
-3. 如何实现二级评论
-4. 如何实现用户之间的消息通知（谁评论了谁，谁点赞了谁）
+1. How to include pictures in post?
+2. How to modify avatar in profile?
+3. How to implement secondary comments?
+4. How to implement message notifications between users (who commented on who, who liked who)?
 
-可以参考 [rum-feed](https://github.com/okdaodine/rum-feed) 这个产品，它也是开源的，你可以从它的功能和源码进行学习
-
-## 反馈和交流
-
-可以直接提 [Issues](https://github.com/okdaodine/rum-demo/issues)
+You can refer to the product [rum-feed](https://github.com/okdaodine/rum-feed), which is also open source, and you can learn from its features and source code.

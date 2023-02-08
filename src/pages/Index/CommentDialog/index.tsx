@@ -80,12 +80,12 @@ const CommentContainer = observer((props: IProps) => {
 
   return (
     <div className="w-[600px] p-8 pt-6">
-      <div className="text-18 text-center font-bold pb-4">评论</div>
+      <div className="text-18 text-center font-bold pb-4">Comment</div>
       
       <div className="py-5 w-full">
         <Button className="mx-auto block" onClick={() => {
           state.showEditorDialog = true;
-        }}>添加评论</Button>
+        }}>Add a comment</Button>
       </div>
 
       <div className="mt-5">

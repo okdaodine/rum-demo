@@ -19,7 +19,7 @@ export default observer(() => {
     content,
     cancelText,
     cancelDisabled,
-    okText = '确定',
+    okText = 'Ok',
     contentClassName,
     loading,
   } = confirmDialogStore;

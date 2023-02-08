@@ -12,6 +12,7 @@ import { PostApi, ProfileApi, TrxApi } from 'apis';
 import { getSocket } from 'utils/socket';
 import * as uuid from 'uuid';
 import { useStore } from 'store';
+import { AiOutlineEdit } from 'react-icons/ai';
 
 export default observer(() => {
   const state = useLocalObservable(() => ({
@@ -154,7 +155,7 @@ export default observer(() => {
 
   const onPostDelete = (postId: string) => {
     confirmDialogStore.show({
-      content: `确实要删除吗?`,
+      content: `Are you sure to delete?`,
       ok: async () => {
         confirmDialogStore.setLoading(true);
         await TrxApi.createActivity({
@@ -178,9 +179,11 @@ export default observer(() => {
         <div className="flex items-center text-gray-700 mb-2">
           <img src={`https://ui-avatars.com/api/?name=${profileName.slice(-1)}`} alt="avatar" className="w-[32px] h-[32px] rounded-full mr-3" />
           <div>{profileName}</div>
-          <div className="text-12 text-blue-400 ml-3 cursor-pointer" onClick={() => {
+          <div className="text-18 text-blue-400 ml-3 cursor-pointer" onClick={() => {
             state.showProfileEditorModal = true;
-          }}>修改</div>
+          }}>
+            <AiOutlineEdit />
+          </div>
           <ProfileEditorDialog
             open={state.showProfileEditorModal}
             onClose={() => {
@@ -193,7 +196,7 @@ export default observer(() => {
       </div>
       <TextField
         className="w-full"
-        placeholder="说点什么..."
+        placeholder="What's happening?"
         size="small"
         multiline
         minRows={3}

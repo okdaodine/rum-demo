@@ -71,7 +71,7 @@ const Editor = observer((props: IProps) => {
     <div className="w-[600px] p-8 pt-6">
       <TextField
         className="w-full"
-        placeholder="说点什么..."
+        placeholder="What's happening?"
         size="small"
         multiline
         autoFocus
