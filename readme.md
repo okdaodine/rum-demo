@@ -4,8 +4,6 @@ All the functional implementations refer to the [ActivityPub](https://docs.rumsy
 
 This example is simple, but its application scenario is very common, so it's worth looking at.
 
-Here is a live version you can try now: https://rum-demo.prsdev.club
-
 If you want to run it on your own computer, follow these steps:
 
 ## Get the code

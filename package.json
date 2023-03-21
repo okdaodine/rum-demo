@@ -20,7 +20,7 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "5.0.1",
-    "rum-sdk-browser": "1.1.1",
+    "rum-sdk-browser": "1.1.4",
     "socket.io-client": "^4.5.1",
     "store2": "^2.14.2",
     "ts-lib-scaffold": "^0.1.1",
